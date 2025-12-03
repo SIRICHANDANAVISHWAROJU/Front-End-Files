@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AUM Computer Science Department</title>
+    <link rel="stylesheet" href="TA_style.css">
+</head>
+<body>
+    <div id="page_wrap">
+        <header id="masthead">
+            <div id="masthead_bar">
+                <div id="site_title">Computer Science Department</div>
+            </div>
+
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="description.html">Program Description</a></li>
+                    <li><a class="is-current" href="TA.html">TA Application</a></li>
+                    <li><a href="GPA.html">GPA Calculator</a></li>
+                </ul>
+            </nav>
+
+            <div id="brand_box" aria-hidden="true">
+                <img src="images/logo.png" alt="AUM Logo">
+            </div>
+        </header>
+
+
+        <div id="form_box">
+            <h2>Teaching Assistant Application Form</h2>
+            <h3>Applicant information</h3>
+
+
+            <form action="survey_data.html" method="get">
+            <div class="field_row">
+            <label>First name:</label>
+            <input type="text" name="first_name" required>
+
+            </div>
+
+
+            <div class="field_row">
+            <label>Last name:</label>
+            <input type="text" name="last_name" required>
+
+            </div>
+
+
+            <div class="field_row">
+            <label>Student ID:</label>
+            <input type="text" name="student_id" required>
+
+            </div>
+
+
+            <div class="field_row">
+            <label>Gender:</label>
+            M <input type="checkbox" name="gender_m" value="M" >
+            F <input type="checkbox" name="gender_f" value="F" required>
+
+            </div>
+
+
+            <div class="field_row">
+            <label>GPA:</label>
+            <input type="text" name="gpa" style="width:40px;" required>
+            </div>
+
+
+            <div class="field_row">
+            <label>Comments:</label>
+            <textarea name="comments"></textarea>
+            </div>
+
+
+            <h2 style="font-size: 20px;">Thank you for completing the application!</h2>
+
+
+            <div class="button_row">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+            </form>
+            </div>
+        <!-- site footer -->
+        <footer id="site_footer">
+            <div id="footer_row">
+                <div class="footer_left">
+                    7400 East Drive <br>
+                    Montgomery, AL 36117 <br>
+                    Local: 334-244-3000 <br>
+                    Toll-Free: 800-227-2549
+                </div>
+
+                <div class="footer_center">
+                    <p>&copy; 2025 Sirichandana Vishwaroju</p>
+                </div>
+
+                <div class="footer_right">
+                    <a href="#"><img src="images/twt.jpeg" alt="Twitter"></a>
+                    <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

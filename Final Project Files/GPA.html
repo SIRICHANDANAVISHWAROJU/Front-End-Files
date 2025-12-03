@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AUM Computer Science Department</title>
+    <link rel="stylesheet" href="GPA_style.css">
+    <script src="GPA.js"></script>
+</head>
+<body>
+    <div id="page_wrap">
+        <header id="masthead">
+            <div id="masthead_bar">
+                <div id="site_title">Computer Science Department</div>
+            </div>
+
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="description.html">Program Description</a></li>
+                    <li><a href="TA.html">TA Application</a></li>
+                    <li><a class="is-current" href="GPA.html">GPA Calculator</a></li>
+                </ul>
+            </nav>
+
+            <div id="brand_box" aria-hidden="true">
+                <img src="images/logo.png" alt="AUM Logo">
+            </div>
+        </header>
+            <!-- MAIN CONTENT AREA -->
+    <main id="content">
+        <section id="gpa-panel">
+            <h1>Find your GPA!</h1>
+            <p class="instructions">
+                Enter the number of credit hours for each course, and the letter grade for each of them.
+                At least 2 courses should be entered.
+            </p>
+
+            <div id="gpa-table">
+                <div class="gpa-row header-row">
+                    <div class="col-label"></div>
+                    <div class="col-credits">Credit Hours</div>
+                    <div class="col-grade">Grade</div>
+                </div>
+
+                <!-- course 1 -->
+                <div class="gpa-row">
+                    <div class="col-label">Course 1:</div>
+                    <div class="col-credits">
+                        <input type="text" id="ch1">
+                    </div>
+                    <div class="col-grade">
+                        <input type="text" id="gr1" maxlength="2">
+                    </div>
+                </div>
+
+                <!-- course 2 -->
+                <div class="gpa-row">
+                    <div class="col-label">Course 2:</div>
+                    <div class="col-credits">
+                        <input type="text" id="ch2">
+                    </div>
+                    <div class="col-grade">
+                        <input type="text" id="gr2" maxlength="2">
+                    </div>
+                </div>
+
+                <!-- course 3 -->
+                <div class="gpa-row">
+                    <div class="col-label">Course 3:</div>
+                    <div class="col-credits">
+                        <input type="text" id="ch3">
+                    </div>
+                    <div class="col-grade">
+                        <input type="text" id="gr3" maxlength="2">
+                    </div>
+                </div>
+
+                <!-- course 4 -->
+                <div class="gpa-row">
+                    <div class="col-label">Course 4:</div>
+                    <div class="col-credits">
+                        <input type="text" id="ch4">
+                    </div>
+                    <div class="col-grade">
+                        <input type="text" id="gr4" maxlength="2">
+                    </div>
+                </div>
+
+                <!-- course 5 -->
+                <div class="gpa-row">
+                    <div class="col-label">Course 5:</div>
+                    <div class="col-credits">
+                        <input type="text" id="ch5">
+                    </div>
+                    <div class="col-grade">
+                        <input type="text" id="gr5" maxlength="2">
+                    </div>
+                </div>
+
+                <!-- average GPA row -->
+                <div class="gpa-row">
+                    <div class="col-label">Avg GPA:</div>
+                    <div class="col-credits">
+                        <input type="text" id="avgGpa" readonly class="avg-box">
+                    </div>
+                    <div class="col-grade"></div>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <div class="submit-button">
+                    <button type="button" onclick="calculateGPA()">submit</button>
+                </div>
+                <div class="reset-button">
+                <button type="button" onclick="resetGPA()">Reset</button></div>
+            </div>
+        </section>
+    </main>
+
+        <!-- site footer -->
+        <footer id="site_footer">
+            <div id="footer_row">
+                <div class="footer_left">
+                    7400 East Drive <br>
+                    Montgomery, AL 36117 <br>
+                    Local: 334-244-3000 <br>
+                    Toll-Free: 800-227-2549
+                </div>
+
+                <div class="footer_center">
+                    <p>&copy; 2025 Sirichandana Vishwaroju</p>
+                </div>
+
+                <div class="footer_right">
+                    <a href="#"><img src="images/twt.jpeg" alt="Twitter"></a>
+                    <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
